@@ -1,0 +1,25 @@
+/* CSS */
+select {
+    
+    font-size: 16px; /* Burchak rangi */
+    border-radius: 5px;/* Asosiy rangi */
+    color: #fff; /* Matn rangi */
+  }
+  
+  select:focus {
+    outline: none;
+  }
+  
+  /* Pastga tushish */
+  select option {
+    background-color: white;
+    color: #000;
+  }
+  
+  /* Yuqori chiziq */
+  select::before {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  

@@ -1,0 +1,10 @@
+body{
+    background: #F3F6FF;
+    display: grid;
+    justify-content: center;
+}
+.App{
+    background: #fff;
+    width: 1320px;
+
+}

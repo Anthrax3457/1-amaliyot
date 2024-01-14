@@ -1,0 +1,107 @@
+.hero {
+  background: url(../../assets/img/bg-dot.png), url(../../assets/img/bg-dot.png),
+    url(../../assets/img/bg-round.png), url(../../assets/img/bg-tree.png),
+    url(../../assets/img/bg-bottom-hero.png);
+  background-position: 10px 10px, bottom 190px right 10px, left 55% top -1px,
+    left 45% bottom -1px, center bottom -1px;
+  background-repeat: no-repeat;
+  height: 760px;
+}
+
+
+.newsletter {
+  background: url(../../assets/img/bg-top.png),
+    url(../../assets/img/bg-bottom.png);
+  background-position: left top, right bottom;
+  background-repeat: no-repeat;
+}
+
+.service__card-img {
+  background: url(../../assets/img/icon-shape-primary.png) center center
+    no-repeat;
+}
+
+.service__card,
+.service__card-link {
+  transition: all 0.5s ease;
+}
+
+.service__card-link::before {
+  position: absolute;
+  content: "";
+  z-index: -1;
+  display: block;
+  width: 35px;
+  height: 35px;
+  background: #dddddd;
+  border-radius: 35px;
+  top: 0;
+  left: 0;
+  transition: all 0.5s ease;
+}
+
+.service__card:hover {
+  background: #2124b1;
+}
+
+.service__card:hover .service__card-link::before {
+  width: 100%;
+  background: #fff;
+}
+
+.service__card:hover h3,
+.service__card:hover p {
+  color: #fff;
+}
+
+.service__card:hover .service__card-img {
+  background: url(../../assets/img/icon-shape-white.png);
+}
+
+.service__card:hover .service__card-img svg path {
+  fill: #2124b1;
+}
+
+.team:hover .bg__color {
+  transition: 1000ms;
+  background: #2124b1;
+}
+.team:hover .icon {
+  background: #ffff;
+}
+.team:hover .text {
+  color: #ffff;
+}
+
+.portfolio__filter-item::after {
+  position: absolute;
+  content: "";
+  right: -1px;
+  bottom: -1px;
+  border-left: 20px solid transparent;
+  border-right: 0 solid transparent;
+  border-bottom: 50px solid #ffffff;
+}
+
+.portfolio__filter-item:hover {
+  color: #f7faff;
+  background: #2124b1;
+  transition: all 0.5s ease;
+}
+
+.portfolio__filter-item.active {
+  color: #f7faff;
+  background: #2124b1;
+}
+
+.portfolio__item-overlay a {
+  background: url(../../assets/img/icon-shape-white.png) center center no-repeat;
+}
+
+.portfolio__item-overlay {
+  transition: all 0.5s ease;
+}
+
+.portfolio__item:hover .portfolio__item-overlay {
+  opacity: 1;
+}
